@@ -48,6 +48,12 @@ li {
   width: 16.66667%;
 }
 
+@media screen and (max-width: 600px) {
+  li {
+    width: 100%;
+  }
+}
+
 a {
   color: #f8f9fb;
   text-decoration: none;
@@ -57,7 +63,7 @@ a {
 }
 
 a:hover {
-  background: #333;
+  background: #054960;
 }
 
 section h1 {
@@ -153,11 +159,26 @@ section h1 {
 }
 
 #services a:hover {
-  color: red;
+  color: #3e1203;
 }
 
 #services ul:after {
   content: "";
   display: block;
   clear: both;
+}
+
+#projects li {
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  width: 23.5%;
+}
+
+#projects li:nth-child(4n) {
+  margin-right: 0;
+}
+
+#projects li img {
+  width: 100%;
 }
